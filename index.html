@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <div class="container">
+    <table>
+        <td>
+            <tr>
+                <input type="text" id="result"><br>
+            </tr><br>
+            <tr>
+                <button id="clear" onclick="clearVal()" class="btns">AC</button>
+                <button onclick="delCal()" class="btns">DEL</button>
+                <button onclick="perc()" class="btns">%</button>
+                <button onclick="result('/')" class="btns">/</button><br>
+            </tr>
+            <tr>
+                <button onclick="result('7')">7</button>
+                <button onclick="result('8')">8</button>
+                <button onclick="result('9')">9</button>
+                <button onclick="result('*')">*</button><br>
+            </tr>
+            <tr>
+                <button onclick="result('4')">4</button>
+                <button onclick="result('5')">5</button>
+                <button onclick="result('6')">6</button>
+                <button onclick="result('-')">-</button><br>
+            </tr>
+            <tr>
+                <button onclick="result('1')">1</button>
+                <button onclick="result('2')">2</button>
+                <button onclick="result('3')">3</button>
+                <button onclick="result('+')">+</button><br>
+            </tr>
+            <tr >
+                <button onclick="result('0')"  class="btns2">0</button>
+                <button onclick="result('00')" class="btns2">00</button>
+                <button onclick="result('.')" class="btns2">.</button>
+                <button onclick="displayResult()" class="btns2">=</button><br>
+            </tr>
+        </td>
+    
+       </table>
+   </div>
+
+
+   <script src="script.js"></script>
+</body>
+</html>
